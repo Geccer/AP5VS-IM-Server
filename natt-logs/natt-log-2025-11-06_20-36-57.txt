@@ -1,0 +1,52 @@
+[20:36:57][PluginLoader][INFO] No plugins found.
+[20:36:57][NATTCore][INFO] NATT CORE initialization done
+Version: 1.7.0 
+Configuration path: https://gitlab.com/ap5vs/test-config/im-server-config/-/raw/main/test-config-4.yaml?ref_type=heads
+Configuration loading mode: FROM URL
+[20:36:57][NATTCore][INFO] Working directory path: C:\Users\tomas\Desktop\AP5VS\im-server-main
+[20:36:57][NATTCore][INFO] Start loading of the configuration file ...
+[20:36:58][NetworkIO][INFO] Yaml data has been loaded from network location (https://gitlab.com/ap5vs/test-config/im-server-config/-/raw/main/test-config-4.yaml?ref_type=heads)
+[20:36:58][NATTCore][INFO] Configuration loading done
+[20:36:58][NATTCore][INFO] Start building test structure according to the configuration ...
+[20:36:58][NATTCore][INFO] Test structure ...
+[20:36:58][NATTCore][INFO] Test structure building done
+[20:36:58][NATTCore][INFO] Start test executing ...
+[20:36:58][TestReportGenerator][INFO] Extenet reports generated. Final report will be saved to file: test_report.html
+[20:36:58][NATTCore][INFO] Starts execution on the root keyword  ...
+[20:36:58][MessageBuffer][INFO] Message buffer created for module with name: default
+[20:36:58][ExternalProgramRunner][INFO] (default) Run external app with command: java -jar app/build/libs/app.jar 9999 10
+[20:36:58][ProcessManager][INFO] New PID (18400) added to file
+[20:36:58][WaitKw][INFO] Waiting: 3000 ms
+[20:36:58][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: 'IM server listening on port 9999, maximum nr. of connections=10...'
+[20:37:01][MessageBuffer][INFO] Message buffer created for module with name: client-1
+[20:37:01][TelnetClient][INFO] (client-1) Telnet client connected to host with the address: 'localhost' on port '9999'
+[20:37:01][MessageBuffer][INFO] Message buffer created for module with name: client-2
+[20:37:01][TelnetClient][INFO] (client-2) Telnet client connected to host with the address: 'localhost' on port '9999'
+[20:37:01][MessageBuffer][INFO] Message buffer created for module with name: client-3
+[20:37:01][TelnetClient][INFO] (client-3) Telnet client connected to host with the address: 'localhost' on port '9999'
+[20:37:01][WaitKw][INFO] Waiting: 2000 ms
+[20:37:01][MessageBuffer][INFO] Message added to buffer [ Mod: client-3 | Tag:  ] Content: ''
+[20:37:01][MessageBuffer][INFO] Message added to buffer [ Mod: client-2 | Tag:  ] Content: ''
+[20:37:01][MessageBuffer][INFO] Message added to buffer [ Mod: client-1 | Tag:  ] Content: ''
+[20:37:01][MessageBuffer][INFO] Message added to buffer [ Mod: client-2 | Tag:  ] Content: 'You are connected from /127.0.0.1:59994'
+[20:37:01][MessageBuffer][INFO] Message added to buffer [ Mod: client-3 | Tag:  ] Content: 'You are connected from /127.0.0.1:59995'
+[20:37:01][MessageBuffer][INFO] Message added to buffer [ Mod: client-1 | Tag:  ] Content: 'You are connected from /127.0.0.1:59993'
+[20:37:03][TelnetClient][INFO] (client-1) Message send: Klient1
+[20:37:03][TelnetClient][INFO] (client-2) Message send: Klient2
+[20:37:03][TelnetClient][INFO] (client-3) Message send: Klient3
+[20:37:03][WaitKw][INFO] Waiting: 800 ms
+[20:37:03][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: 'From client /127.0.0.1:59994: Klient2'
+[20:37:03][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: 'From client /127.0.0.1:59995: Klient3'
+[20:37:03][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: 'From client /127.0.0.1:59993: Klient1'
+[20:37:03][MessageBuffer][INFO] Message added to buffer [ Mod: client-1 | Tag:  ] Content: 'From client /127.0.0.1:59994: Klient2'
+[20:37:03][MessageBuffer][INFO] Message added to buffer [ Mod: client-3 | Tag:  ] Content: 'From client /127.0.0.1:59994: Klient2'
+[20:37:03][MessageBuffer][INFO] Message added to buffer [ Mod: client-2 | Tag:  ] Content: 'From client /127.0.0.1:59993: Klient1'
+[20:37:03][MessageBuffer][INFO] Message added to buffer [ Mod: client-1 | Tag:  ] Content: 'From client /127.0.0.1:59995: Klient3'
+[20:37:03][MessageBuffer][INFO] Message added to buffer [ Mod: client-3 | Tag:  ] Content: 'From client /127.0.0.1:59993: Klient1'
+[20:37:03][MessageBuffer][INFO] Message added to buffer [ Mod: client-2 | Tag:  ] Content: 'From client /127.0.0.1:59995: Klient3'
+[20:37:04][TestSuiteKw][INFO] Test case 'Zaklaní test komunikace 1' starts executing now
+[20:37:04][TelnetClient][INFO] (client-1) Message send: Hello, world!
+[20:37:04][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: 'From client /127.0.0.1:59993: Hello, world!'
+[20:37:04][WaitKw][INFO] Waiting: 1000 ms
+[20:37:04][MessageBuffer][INFO] Message added to buffer [ Mod: client-3 | Tag:  ] Content: 'From client /127.0.0.1:59993: Hello, world!'
+[20:37:04][MessageBuffer][INFO] Message added to buffer [ Mod: client-2 | Tag:  ] Content: 'From client /127.0.0.1:59993: Hello, world!'
